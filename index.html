@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentation of heart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Heart segmentation demo</h1>
+    </header>
+    
+    <div id="button-row">
+        <label><input type="checkbox" id="truth-checkbox" checked> Truth</label>
+        <label><input type="checkbox" id="unet-checkbox" checked> UNET</label>
+        <label><input type="checkbox" id="unetr-checkbox"> UNETR</label>
+        <label><input type="checkbox" id="swin-unetr-checkbox"> Swin UNETR</label>
+    </div>
+    
+    <div id="content">
+        <canvas id="gl" width="640" height="640"></canvas>
+    </div>
+    
+    <script type="module" src="app.js"></script>
+</body>
+</html>
